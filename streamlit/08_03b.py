@@ -9,3 +9,6 @@ data = pd.DataFrame(np.random.randint(30, size=(30,3)), columns = col_names)
 
 'line graph'
 st.line_chart(data)
+
+'Bar graph:'
+st.bar_chart(data)
