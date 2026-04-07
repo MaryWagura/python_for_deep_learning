@@ -19,3 +19,5 @@ heights = [30,150,80]
 'Pie Chart:'
 fig, ax = plt.subplots()
 ax.pie(heights, labels=animals)
+
+st.pyplot(fig)
