@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+from spyder import pyplot
 
 #create a bar chart in matplot and display in streamlit
 
@@ -23,5 +24,18 @@ ax.set_xticks(x)
 ax.set_xticklabels(animals)
 
 st.pyplot(fig)
+
+#### pie chart ####
+
+explode = [0.2, 0.1, 0.1, 0.1, 0.1]
+plot_pie, ax = plt.subplots()
+ax.pie(heights,explode = explode,labels=animals,autopct = '%1.1f%%',shadow = True)
+#the pie is drawn as a circle
+ax.axis('equal')
+st.pyplot(plot_pie)
+
+
+
+
 
 
