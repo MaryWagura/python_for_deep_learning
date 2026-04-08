@@ -14,3 +14,11 @@ for i in range(1,100):
     chart.add_rows(new_rows)
     rows = new_rows
     time.sleep(0.05)
+
+
+    #use matplotlib
+    values = np.random.rand(10)
+    "matplotlib's Line Chart:"
+    fig, ax = plt.subplots()
+    ax.plot(values)
+    st.pyplot(fig)
