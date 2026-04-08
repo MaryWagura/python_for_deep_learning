@@ -14,3 +14,8 @@ data = pd.DataFrame(iris_data.data, columns=iris_data.feature_names)
 fig = plt.figure()
 sns.histplot(data=data, bins=20)
 st.pyplot(fig)
+
+### Box plot ###
+fig = plt.figure()
+sns.boxplot(data=data)
+st.pyplot(fig)
