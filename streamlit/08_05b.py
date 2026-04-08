@@ -15,4 +15,13 @@ fig, ax = plt.subplots()
 x= np.arange(len(heights))
 width = 0.40
 
+ax.bar(x-0.2, heights, width, color='red')
+ax.bar(x+0.2, weights, width, color='blue')
+
+ax.legend(['height', 'weight'])
+ax.set_xticks(x)
+ax.set_xticklabels(animals)
+
+st.pyplot(fig)
+
 
