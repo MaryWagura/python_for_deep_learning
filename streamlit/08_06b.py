@@ -19,3 +19,8 @@ st.pyplot(fig)
 fig = plt.figure()
 sns.boxplot(data=data)
 st.pyplot(fig)
+
+### scatter plot ###
+fig = plt.figure()
+sns.scatterplot(data=data)
+st.pyplot(fig)
